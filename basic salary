@@ -1,0 +1,21 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+
+int gs,i,s,bs;
+clrscr();
+
+for(i=1;i<4;i++)
+{
+printf("\nenter the basic salary");
+scanf("%d", &bs);
+
+gs=((bs*0.9) + (bs*0.1) + bs);
+printf("\n basic salary= %d",gs);
+
+}
+
+getch();
+
+}
