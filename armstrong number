@@ -1,0 +1,28 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+int n,i,c,d=0;
+clrscr();
+
+
+printf("ENTER THE ARMSTRONG NUMBER");
+scanf("%d",&n);
+
+for(i=n;i>0;i=i/10)
+{
+
+c= i%10;
+d=d+(c*c*c);
+
+}
+
+
+if(d==n)
+{
+printf("\n IT IS A ARMSTRONG NUMBER");
+}
+
+else{}
+
+}
