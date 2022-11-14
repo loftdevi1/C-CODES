@@ -1,0 +1,22 @@
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+int a,b,i,r=1,l;
+clrscr();
+
+
+printf("ENTER THE TWO NUMBWRS");
+scanf("%d%d",&a,&b);
+
+for(i=1;i<=b;i++)
+{
+
+r=r*a;
+
+}
+
+printf("the result is %d",r);
+
+getch();
+}
