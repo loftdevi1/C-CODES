@@ -1,0 +1,100 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+int choice, fact, i, answer=1, n, z, count=0, nam;
+clrscr();
+while(1)
+{
+
+printf("\nENTER YOU CHOICE");
+printf("\n 1. FACTORIAL OF A NUMBER");
+printf("\n 2. PRIME OR NOT");
+printf("\n 3. ODD OR EVEN");
+printf("\n 4. EXIT");
+scanf("%d", &choice);
+
+switch(choice)
+{
+
+case 1:
+
+printf("\nENTER THE NUMBER TO FIND THE FACTORIAL OF");
+scanf("%d", &fact);
+
+for(i=1;i<=fact;fact-1)
+{
+answer= answer*fact-1;
+}
+printf("\n factorial of the number is %d", answer);
+break;
+
+case 2:
+
+printf("\nenter the number to find if prime or not");
+scanf("%d", &n);
+
+
+
+for(z=2;z<=n-1;z++);
+{
+
+if(n%z==0)
+{
+count++;
+
+}
+}
+
+if(count>0)
+{
+printf("\nprime number");
+}
+
+else
+
+printf("\nnot a prime number");
+
+
+break;
+
+
+case 3:
+
+printf("\nenter a number to find if odd or even");
+scanf("%d", &nam);
+
+if(nam%2==0)
+{
+printf("\nnumber is even");
+}
+
+else
+{
+printf("\nnumber is odd");
+}
+break;
+
+
+case 4:
+
+exit(0);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+}
+}
