@@ -1,28 +1,23 @@
-#include<conio.h>
-#include<stdlib.h>
-#include<conio.h>
+#include <conio.h>
+#include <stdlib.h>
+#include <conio.h>
 void main()
 {
-int dis,m,f,i,c;
-clrscr();
 
-printf("\nenter the distance between two cities in kilometers")
-scanf("%d",&dis);
+int dis,m,f,i,c;
+
+printf("\nenter the distance between two cities in kilometers");
+scanf("%d", &dis);
 
 m= dis*1000;
-
 f= m*3.4;
-
 i= f*12;
-
 c= i*2.54;
 
-
-printf(" the distamnce in meters %d", m);
-printf(" the distamnce in feet %d", f);
-printf(" the distamnce in inches %d", i);
-printf(" the distamnce in centimeters %d", c);
-
+printf("\nthe distamnce in meters %d", m);
+printf("\nthe distamnce in feet %d", f);
+printf("\nthe distamnce in inches %d", i);
+printf("\nthe distamnce in centimeters %d", c);
 
 getch();
 
