@@ -1,0 +1,72 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+
+int choice,SUM, SUM2, TEMP, SUB, SUB2, TEMP2, TEMP6, MUL, MUL2, TEMP3, DIV, DIV2, TEMP4, TEMP5, A, B;
+while(1)
+{
+A=0;
+B=0;
+
+printf("\n 1. addition");
+printf("\n 2. subtraction");
+printf("\n 3. multiplication");
+printf("\n 4. divisionn");
+printf("\n 5. average");
+printf("\n 6. percentage");
+printf("\n 7. EXIT");
+printf("\nENTER YOU CHOICE");
+scanf("\n%d", &choice);
+
+switch(choice)
+{
+case 1:
+printf("\nENTER THE NUMBER TO ADD");
+scanf("%d%d", &SUM, &SUM2);
+TEMP= SUM+SUM2;
+printf("\n THE ADDED VALUE IS %d",TEMP);
+break;
+
+case 2:
+printf("\nENTER THE NUMBER TO SUBTRACT");
+scanf("%d%d", &SUB, &SUB2);
+TEMP2= SUB-SUB2;
+printf("\n THE SUBTACTED VALUE IS %d",TEMP2);
+break;
+
+case 3:
+printf("\nENTER THE NUMBER TO MULTIPLY");
+scanf("%d%d", &MUL, &MUL2);
+TEMP3= MUL*MUL2;
+printf("\n THE MULTIPLIED VALUE IS %d",TEMP3);
+break;
+
+case 4:
+printf("\nENTER THE NUMBER TO DIVIDE");
+scanf("%d%d", &DIV, &DIV2);
+TEMP4= DIV/DIV2;
+printf("\n THE DIVIDED VALUE IS %d",TEMP4);
+break;
+
+case 5:
+printf("\nENTER THE NUMBER TO FIND AVERAGE");
+scanf("%d%d", &A, &B);
+TEMP5= (A+B)/2 ;
+printf("\n THE PERCENTAGE VALUE IS %d",TEMP5);
+break;
+
+case 6:
+printf("\nENTER THE NUMBER TO FIND PERCENTAGE");
+scanf("%d%d", &A, &B);
+TEMP6= (A/B)*100;
+printf("\n THE PERCENTAGE VALUE IS %d",TEMP6);
+break;
+
+case 7:
+exit(0);
+
+}
+}
+}
