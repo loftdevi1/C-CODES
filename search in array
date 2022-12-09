@@ -1,0 +1,41 @@
+
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+int no[5],i,search,count=0;
+clrscr();
+
+printf("ENTER 5 NUMBERS=");
+
+for(i=0; i<5; i++)
+{
+scanf("%d",&no[i]);
+}
+
+printf("\n ENTER A NUMBER TO SEARCH IN ARRAY=");
+scanf("%d",&search);
+
+for(i=0; i<5; i++)
+{
+if(search==no[i])
+{
+printf("\nPOSITION HIT NO[%d]", i);
+count++;
+}
+}
+
+if(count>0)
+{
+printf("\nNUMBER EXISTS IN ARRAY");
+}
+
+else
+{
+printf("ENTERED NOMBER DOES NOT EXIST IN ARRAY");
+}
+
+getch();
+}
+
