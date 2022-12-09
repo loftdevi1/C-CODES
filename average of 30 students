@@ -1,0 +1,23 @@
+#include <conio.h>
+#include <stdio.h>
+#include <stdlib.h>
+void main()
+{
+int marks[30],i,avg=0;
+clrscr();
+
+printf("ENTER MARKS OF 30 STUDENTS:\n");
+
+for(i=0; i<30; i++)
+{
+scanf("%d",&marks[i]);
+avg=avg+marks[i];
+}
+
+avg=avg/30;
+
+printf("THE AVERAGE MARKS OF 30 STUDENTS= %d", avg);
+
+getch();
+
+}
