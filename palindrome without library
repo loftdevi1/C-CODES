@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+
+void main()
+{
+int i,n,len;
+char charac[10],rev[10],ch[10];
+clrscr();
+
+printf("ENTER THE STRING");
+scanf("%s",charac);
+len=strlen(charac);
+
+for(i=0;i<len/2;i++)
+{
+if(charac[i]==charac[len-1]);
+{
+len--;
+}
+
+else
+{
+printf("the string is notv palindrome");
+}
+
+}
+
+getch();
+
+}
