@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+#include <alloc.h>
+
+void main()
+{
+int *ptr,i,n;
+clrscr();
+
+printf("ENTER THE NUMBER OF ARRAYS");
+scanf("%d",&n);
+
+ptr=(int*)malloc(n*2);
+
+for(i=0;i<n;i++)
+{
+	printf("\nENTER THE ELEMENT");
+	scanf("%d",ptr+i);
+}
+
+for(i=0;i<n;i++)
+{
+	printf("\nELEMENTs entered=%d",*(ptr+i));
+}
+free(ptr);
+getch();
+
+}
